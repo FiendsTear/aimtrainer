@@ -8,4 +8,10 @@
             }
             html, body {
                 height: 100%;
-            }</style></head><body><script src="js/game.js"></script></body></html>
+            }</style></head><body><script>window.onload = ()=> {
+                const canvas = document.createElement("canvas");
+                canvas.style.width = "100%";
+                canvas.style.height = "100%";
+                document.body.appendChild(canvas);
+                game(canvas, {name: 'test', email: 'test', phone: 'test'});
+            };</script><script src="main.js"></script></body></html>
